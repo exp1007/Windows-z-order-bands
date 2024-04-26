@@ -7,7 +7,7 @@
 - External links
 
 # About bands
-Windows 11 and 10 have multiple bands for z-order, the system is using these bands to create windows with higher z-orders . ZBID_DESKTOP is the band for regular user-created window (CreateWindow) is pushed into but there are many more bands that system tools use. Task manager in Windows 11 has a top most option which uses ZBID_SYSTEM_TOOLS band and as we can see in ZBID enum, it has a higher index so it can easily draw above desktop windows. 
+Windows 11 and 10 have multiple bands for z-order, the system is using these bands to create system windows with higher z-orders . ZBID_DESKTOP is the band where regular user-created windows (CreateWindow) are pushed into but there are many more bands that system tools use. Task manager in Windows 11 has a top most option which uses ZBID_SYSTEM_TOOLS band and as we can see in ZBID enum below, it has a higher index so it can easily draw above desktop windows. 
 Gaining access to bands gives us permission to use the any z-order we need including the highest one possible (ZBID_UIACCESS), this already sounds nice.
 
 # Getting started
